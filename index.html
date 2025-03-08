@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aImpulsar - Transforma tu Concesionario Hoy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fuentes modernas de Google Fonts - Estilo profesional */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f4f7fa; /* Fondo gris claro profesional */
+            color: #2d3748; /* Gris oscuro para texto */
+            line-height: 1.6;
+        }
+        /* Colores: Nueva paleta profesional */
+        :root {
+            --primary: #2d3748; /* Gris oscuro profesional */
+            --secondary: #00ABE4; /* Azul brillante */
+            --light-blue: #E9F1FA; /* Azul claro */
+            --accent: #ff6200; /* Naranja neón muy llamativo */
+        }
+        /* Animación flotante para imágenes */
+        .float-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .float-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Efectos modernos y profesionales */
+        section {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 4rem 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+        nav {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        h1, h2, h3 {
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            color: var(--primary);
+        }
+        p {
+            font-weight: 300;
+            color: var(--primary);
+        }
+        a {
+            transition: all 0.3s ease;
+        }
+        /* Botones más llamativos */
+        button, a.bg-[var(--accent)] {
+            box-shadow: 0 0 15px rgba(255, 98, 0, 0.5);
+        }
+        /* Cajas de Servicios más legibles */
+        .service-box {
+            background: var(--light-blue); /* Azul claro para fondo */
+            color: var(--primary);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-extrabold text-[var(--secondary)]">aImpulsar</h1>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#services" class="text-[var(--primary)] hover:text-[var(--accent)]">Servicios</a>
+                    <a href="#contact" class="bg-[var(--accent)] text-white px-4 py-2 rounded-full hover:bg-[var(--secondary)] hover:text-[var(--primary)]">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero + Nuestro Valor Section (Fusionada) -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <div class="absolute inset-0 bg-[var(--primary)] opacity-70"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-6xl font-black mb-6 text-white">Transforma tu Concesionario Hoy</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white">Ayudamos a los concesionarios a implementar estrategias ganadoras y probadas a solucionar sus desafíos más importantes.</p>
+            <a href="#contact" class="bg-[var(--accent)] text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-[var(--secondary)] hover:text-[var(--primary)]">Contacto</a>
+        </div>
+    </section>
+
+    <!-- 2. Nuestros Servicios Section -->
+    <section id="challenges">
+        <h2 class="text-4xl font-bold text-center mb-12">Soluciones</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <img src="https://plus.unsplash.com/premium_photo-1661391736132-93f5705860f9?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Operaciones" class="w-full h-48 object-cover rounded-lg mb-4 float-in mx-auto">
+                <h3 class="text-2xl font-bold text-[var(--secondary)] mb-2">Operaciones</h3>
+                <p class="max-w-md mx-auto">Convierte tu concesionario en una máquina sincronizada. Te ayudamos con la optimización de procesos y el diseño de manuales operativos para tu empresa.</p>
+            </div>
+            <div>
+                <img src="https://plus.unsplash.com/premium_photo-1661277710424-93c4642eb716?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Entrenamientos" class="w-full h-48 object-cover rounded-lg mb-4 float-in mx-auto">
+                <h3 class="text-2xl font-bold text-[var(--secondary)] mb-2">Entrenamientos</h3>
+                <p class="max-w-md mx-auto">Transforma tu equipo de ventas. Aprende a vender vehículos de forma óptima, maneja objeciones, optimiza tu proceso de ventas y mejora la experiencia del cliente.</p>
+            </div>
+            <div>
+                <img src="https://plus.unsplash.com/premium_photo-1661274058153-809473af2bdf?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Iniciativas" class="w-full h-48 object-cover rounded-lg mb-4 float-in mx-auto">
+                <h3 class="text-2xl font-bold text-[var(--secondary)] mb-2">Iniciativas</h3>
+                <p class="max-w-md mx-auto">Impulsa el crecimiento de tu negocio con iniciativas estratégicas. Mide las ventas, gestiona el inventario eficientemente, reduce fricciones y mejora tu presencia digital.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sobre Nosotros Section -->
+    <section id="about">
+        <h2 class="text-4xl font-bold text-center mb-6">Sobre Nosotros</h2>
+        <p class="text-lg max-w-3xl mx-auto text-center">Algunas personas son excelentes creando orden a partir del caos. Eso es lo que Juan Cassillas sabe hacer. Tras haber trabajado en iniciativas globales en Tesla, Juan ha sido reconocido por su capacidad para entender rápidamente los objetivos y metas de una empresa, diseñar una estrategia alineada con esos objetivos y ejecutarla hasta obtener resultados. Puedes contar con él y su red de consultores para trabajar con honestidad, integridad y profesionalismo.</p>
+    </section>
+
+    <!-- 4. Servicios Section -->
+    <section id="services">
+        <h2 class="text-4xl font-bold text-center mb-12">Servicios</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="service-box">
+                <h3 class="text-2xl font-bold text-[var(--secondary)] mb-2">Sesión Estratégica</h3>
+                <p class="max-w-md mx-auto">Para concesionarios que buscan una consultoría general, con el objetivo de identificar mejoras clave en su metodología de trabajo, todo en una jornada.</p>
+            </div>
+            <div class="service-box">
+                <h3 class="text-2xl font-bold text-[var(--secondary)] mb-2">Transformación Total</h3>
+                <p class="max-w-md mx-auto">Para concesionarios que desean una renovación completa de sus procesos, estrategias y operaciones, adaptándolos a las mejores prácticas del mercado y asegurando un cambio sostenible a largo plazo.</p>
+            </div>
+            <div class="service-box">
+                <h3 class="text-2xl font-bold text-[var(--secondary)] mb-2">Suscripción de Consultoría Continuada</h3>
+                <p class="max-w-md mx-auto">Para concesionarios que buscan un acompañamiento constante y personalizado. A través de un servicio mensual, brindamos consultoría continua para implementar mejoras, optimizar operaciones y garantizar resultados a largo plazo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Nuestros Números Section -->
+    <section>
+        <h2 class="text-4xl font-bold text-center mb-12">Nuestros Números</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold text-[var(--accent)]">+5.000</p>
+                <p class="mt-2 max-w-md mx-auto">Coches Vendidos</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-[var(--accent)]">+75</p>
+                <p class="mt-2 max-w-md mx-auto">Tiendas Ayudadas</p>
+            </div>
+            <div>
+                <p class="text-4xl font-bold text-[var(--accent)]">35%</p>
+                <p class="mt-2 max-w-md mx-auto">Aumento Productividad</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contacto Section -->
+    <section id="contact">
+        <h2 class="text-4xl font-bold text-center mb-12">Contacto</h2>
+        <form action="https://usebasin.com/f/08cde2af21c8" method="POST" class="max-w-lg mx-auto space-y-6 text-center">
+            <div>
+                <label for="name" class="block text-sm font-medium">Nombre</label>
+                <input type="text" id="name" name="name" class="w-full mt-1 p-3 rounded-lg bg-[var(--light-blue)] text-[var(--primary)] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]" placeholder="Tu nombre" required>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="w-full mt-1 p-3 rounded-lg bg-[var(--light-blue)] text-[var(--primary)] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]" placeholder="Tu correo" required>
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium">Mensaje</label>
+                <textarea id="message" name="message" rows="4" class="w-full mt-1 p-3 rounded-lg bg-[var(--light-blue)] text-[var(--primary)] placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]" placeholder="¿En qué te ayudamos?" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-[var(--accent)] text-white px-6 py-3 rounded-full font-bold hover:bg-[var(--secondary)] hover:text-[var(--primary)]">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center">
+        <p class="text-sm text-[var(--primary)]">© 2025 aImpulsar
+            . Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para animación flotante -->
+    <script>
+        const floatElements = document.querySelectorAll('.float-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        floatElements.forEach(element => observer.observe(element));
+
+        // Script básico para el formulario
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            alert('Formulario enviado con éxito.');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
